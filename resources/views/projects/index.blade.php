@@ -1,10 +1,6 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Basecamp Clone</title>
-</head>
+@extends ('layouts.app')
 
-<body>
+@section('content')
     <h1>Basecamp Clone</h1>
 
     <ul>
@@ -16,6 +12,5 @@
             <li>No projects yet.</li>
         @endforelse
     </ul>
-</body>
+@endsection
 
-</html>
