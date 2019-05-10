@@ -1,12 +1,5 @@
-// Fonts
-@import url('https://fonts.googleapis.com/css?family=Nunito');
-
 // Variables
 @import 'variables';
-
-// Bootstrap
-@import '~bootstrap/scss/bootstrap';
-
 
 /**
  * This injects Tailwind's base styles, which is a combination of
@@ -45,6 +38,19 @@
  * @import "components/buttons";
  * @import "components/forms";
  */
+
+.section {
+    @apply .px-4;
+}
+
+.button {
+    @apply .bg-blue .text-white .no-underline .rounded-lg .text-sm .py-2 .px-5;
+    box-shadow: 0 2px 7px 0 #b0eaff;
+}
+
+.card {
+    @apply .bg-white .p-5 .rounded-lg .shadow;
+}
 
 /**
  * This injects all of Tailwind's utility classes, generated based on your
