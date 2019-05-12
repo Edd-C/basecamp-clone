@@ -55,8 +55,8 @@ class ManageProjectTest extends TestCase
         $project = factory('App\Project')->create( [ 'owner_id' => auth( )->id( ) ] );
 
         $this->get($project->path())
-            ->assertSee($project->title);
-            //->assertSee($project->description); // This is not working because we are trimming the desc len in "card.blade.php"
+            ->assertSee($project->title)
+            ->assertSee($project->description);
     }
 
     /** @test */
